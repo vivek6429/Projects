@@ -1,0 +1,189 @@
+help
+adjrange - configure adjustment ranges
+aux - configure modes
+	<index> <mode> <aux> <start> <end> <logic>
+beacon - enable/disable Dshot beacon for a condition
+	list
+	<->[name]
+beeper - enable/disable beeper for a condition
+	list
+	<->[name]
+bl - reboot into bootloader
+board_name - get / set the name of the board model
+	[board name]
+color - configure colors
+defaults - reset to defaults and reboot
+	[nosave]
+diff - list configuration changes from default
+	[master|profile|rates|all] {defaults}
+dma - list dma utilisation
+dshotprog - program DShot ESC(s)
+	<index> <command>+
+dump - dump configuration
+	[master|profile|rates|all] {defaults}
+escprog - passthrough esc to serial
+	<mode [sk/bl/ki/cc]> <index>
+exit
+feature - configure features
+	list
+	<+|->[name]
+flash_erase - erase flash chip
+flash_info - show flash chip info
+get - get variable value
+	[name]
+gpspassthrough - passthrough gps to serial
+gyroregisters - dump gyro config registers contents
+help
+led - configure leds
+manufacturer_id - get / set the id of the board manufacturer
+	[manufacturer id]
+map - configure rc channel order
+	[<map>]
+mcu_id - id of the microcontroller
+mixer - configure mixer
+	list
+	<name>
+mmix - custom motor mixer
+mode_color - configure mode and special colors
+motor - get/set motor
+	<index> [<value>]
+msc - switch into msc mode
+name - name of craft
+play_sound
+	[<index>]
+profile - change profile
+	[<index>]
+rateprofile - change rate profile
+	[<index>]
+rc_smoothing_info - show rc_smoothing operational settings
+resource - show/set resources
+rxfail - show/set rx failsafe settings
+rxrange - configure rx channel ranges
+save - save and reboot
+serial - configure serial ports
+serialpassthrough - passthrough serial data to port
+	<id> [baud] [mode] [DTR PINIO]: passthrough to serial
+servo - configure servos
+set - change setting
+	[<name>=<value>]
+signature - get / set the board type signature
+	[signature]
+smix - servo mixer
+	<rule> <servo> <source> <rate> <speed> <min> <max> <box>
+	reset
+	load <mixer>
+	reverse <servo> <source> r|n
+status - show status
+tasks - show task stats
+version - show version
+vtx - vtx channels on switch
+
+# diff all
+
+# version
+# Betaflight / FURYF4OSD (FY4O) 3.5.1 Sep  8 2018 / 05:21:25 (d9fb5ca13) MSP API: 1.40
+
+board_name FURYF4OSD
+manufacturer_id 
+mcu_id 0021004f474b501120313357
+signature 
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+
+# beeper
+
+# beacon
+
+# map
+
+# serial
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set osd_vbat_pos = 2528
+set osd_rssi_pos = 2049
+set osd_remaining_time_estimate_pos = 2073
+set osd_flymode_pos = 2081
+set osd_ah_sbar_pos = 2254
+set osd_ah_pos = 207
+set osd_current_pos = 2496
+set osd_gps_speed_pos = 2106
+set osd_warnings_pos = 2408
+set osd_disarmed_pos = 2272
+set osd_esc_rpm_pos = 2548
+set osd_core_temp_pos = 2555
+
+# profile
+profile 0
+
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

@@ -1,0 +1,16 @@
+* {margin:0px; padding:0px;}
+img {border:none}
+#slider1 {height:168px; overflow:hidden; padding:10px 0 10px 0}
+#slider1 .viewport {float:left; width:922px; height:168px; overflow:hidden; position:relative;}
+
+#slider1 .preva {float:left; display:block; width:28px; height:168px; background:url(left.gif) no-repeat left; margin-right:20px; margin-top:2px;}
+#slider1 .preva:hover {background:url(left.gif) no-repeat right;}
+
+#slider1 .nexta {float:right; display:block; width:28px; height:168px; background:url(right.gif) no-repeat right; margin-top:2px;}
+#slider1 .nexta:hover {background:url(right.gif) no-repeat left;}
+
+#slider1 .disable {visibility:hidden1;}
+
+#slider1 .overviewa {position:absolute; padding:0; margin:0; width:217px; left:0; top:0; height:168px}
+#slider1 .overviewa li{ float:left; margin:0 20px 0 0; width:217px; height:168px;}
+#slider1 .overviewa img {width:217px; height:168px;}

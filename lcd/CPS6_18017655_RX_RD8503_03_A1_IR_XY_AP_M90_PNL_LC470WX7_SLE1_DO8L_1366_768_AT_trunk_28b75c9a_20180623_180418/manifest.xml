@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="." name="origin"/>
+  <remote fetch="." name="public"/>
+  
+  <default remote="origin" revision="trunk" sync-j="4"/>
+  
+  <project name="code/application" path="aps/application" revision="195cf8bde1553e55b77d0ff3a9641ade53378a74" upstream="trunk"/>
+  <project name="code/aps" path="aps" revision="9630ce08ef848e534ddb3d398bc83e9fcbb07404" upstream="trunk"/>
+  <project name="code/av_dev" path="aps/av_dev" revision="616c820587cc0985e86aa1c5cd2d18f25725a11c" upstream="trunk"/>
+  <project name="code/boot" path="boot" revision="2bb58f17a9db5257830feafdcfcfcbab7787ec77" upstream="trunk"/>
+  <project name="code/config" path="." revision="7c680dda5b2ba0aff5eacc667d24610da46c68eb" upstream="trunk"/>
+  <project name="code/drivers" path="drivers" revision="e42268870e2748fe776b619226be75ae68851a66" upstream="trunk"/>
+  <project name="code/kernel" path="kernel" revision="6f0f9f13fc53880b182f38267e072d702b37d812" upstream="trunk"/>
+  <project name="code/log" path="log" revision="ab7f5d7660616843104a0a887814a60f59d6ce3a" upstream="trunk"/>
+  <project name="code/mergedir" path="mergedir" revision="f95daa468d51fe19160986d7c6e7e70e2a834c16" upstream="trunk"/>
+  <project name="code/tools" path="tools" revision="802bcc2164036930bf1732ecd54787fa6a1804ac" upstream="trunk"/>
+  <project name="cps_autobuild" revision="d390a4539ff6351057f51e5056debed8b60ac2fc" upstream="trunk"/>
+  <project name="cps_autobuild/public_script" path="cps_autobuild/public" revision="ffe3799b5ea02605ad4e889c318cb0d33b72ddbd" upstream="trunk"/>
+  <project name="customers" revision="28b75c9abded3694c6dcf7b50a56906a36afc316" upstream="trunk">
+    <copyfile dest="Makefile" src="Makefile.mk"/>
+  </project>
+  <project name="customers/manifest" revision="932e3ec08ea28decd388b5a8237bec54294ac1f5" upstream="tagcps_develop"/>
+  <project name="cvte_check_cnpd_proj" path="customers/buildtools/src/cvte_check_cnpd_proj" remote="public" revision="9b72f308b27e56dba1c70da7eee2c558740c1a47" upstream="stable"/>
+  <project name="module/cvte_check_function" path="customers/buildtools/src/cvte_check_function" revision="c0c6bc56275ba7da40db4a9cb6fd17bba3221f2c" upstream="trunk"/>
+</manifest>
